@@ -1,0 +1,38 @@
+==================================
+LULESH OpenMP weak scaling
+Job ID: 499257
+Node: cpu0618
+Slurm tasks: 1
+OpenMP threads: 27
+Mesh size: 90 x 90 x 90
+Working directory: /fshpc/alembhe/ashutoshbenchmarks/LULESH/source
+==================================
+Running problem size 90^3 per domain until completion
+Num processors: 1
+Num threads: 27
+Total number of elements: 729000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  90
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.571214e+07
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 3.958121e-09
+        TotalAbsDiff = 1.754376e-08
+        MaxRelDiff   = 4.480934e-12
+
+Elapsed time         =        8.4 (s)
+Grind time (us/z/c)  = 0.11580892 (per dom)  (   8.44247 overall)
+FOM                  =  8634.9137 (z/s)
+
+
+OpenMP weak-scaling job finished.

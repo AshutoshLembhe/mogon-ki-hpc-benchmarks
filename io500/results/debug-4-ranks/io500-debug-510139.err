@@ -1,0 +1,18 @@
+
+Currently Loaded Modules:
+  1) compiler/GCCcore/13.3.0
+  2) tools/binutils/.2.42-GCCcore-13.3.0 (H)
+  3) compiler/GCC/13.3.0
+  4) system/hwloc/2.10.0-GCCcore-13.3.0
+  5) lib/libevent/2.1.12-GCCcore-13.3.0
+  6) lib/UCX/1.16.0-GCCcore-13.3.0
+  7) lib/PMIx/5.0.2-GCCcore-13.3.0
+  8) lib/PRRTE/3.0.5-GCCcore-13.3.0
+  9) lib/UCC/1.3.0-GCCcore-13.3.0
+ 10) mpi/OpenMPI/5.0.3-GCC-13.3.0
+
+  Where:
+   H:  Hidden Module
+
+ 
+

@@ -1,0 +1,124 @@
+[run]
+procs           = 1
+version         = io500-isc26_v2-26-g02091cf254d8
+config-hash     = 3C838C39
+result-dir      = /home/alembhe/io500/results/io500-1ranks-510144
+mode            = standard
+; START 2026-07-29 12:43:47
+; ERROR INVALID stonewall-time 30s != 300s
+
+
+[ior-easy-write]
+t_start         = 2026-07-29 12:43:47
+exe             = ./ior --dataPacketType=timestamp -g -G 1871906314 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/ior-easy/ior_file_easy -C -Q 1 -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-1ranks-510144/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 30 -O stoneWallingWearOut=1 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-1ranks-510144/ior-easy-write.csv
+throughput-stonewall = 0.00
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 0.000062
+t_delta         = 62.6447
+t_end           = 2026-07-29 12:44:50
+
+[mdtest-easy-write]
+t_start         = 2026-07-29 12:44:50
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883188 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-easy.stonewall -C -Y -W 30 --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-easy-write.csv -a POSIX
+rate-stonewall  = 3.944920
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 2.243547
+t_delta         = 53.7679
+t_end           = 2026-07-29 12:45:44
+
+[timestamp]
+t_start         = 2026-07-29 12:45:44
+t_delta         = 0.0018
+t_end           = 2026-07-29 12:45:44
+
+[ior-hard-write]
+t_start         = 2026-07-29 12:45:44
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1871917002 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/ior-hard/file -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-1ranks-510144/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -w -D 30 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-1ranks-510144/ior-hard-write.csv -O stoneWallingWearOut=1
+throughput-stonewall = 0.20
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 0.188876
+t_delta         = 34.2887
+t_end           = 2026-07-29 12:46:18
+
+[mdtest-hard-write]
+t_start         = 2026-07-29 12:46:18
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872500 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard.stonewall -C -Y -W 30 --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard-write.csv -a POSIX
+rate-stonewall  = 0.000263
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 0.000138
+t_delta         = 73.3565
+t_end           = 2026-07-29 12:47:31
+
+[find]
+t_start         = 2026-07-29 12:47:31
+exe             = ./pfind /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles -newer /home/alembhe/io500/results/io500-1ranks-510144/timestampfile -size 3901c -name *01* -C -q 10000
+nproc           = 1
+; ERROR INVALID Find didn't find anything, this is likely invalid.
+found           = 0
+total-files     = 118362
+score           = 87.041958
+t_delta         = 1.3642
+t_end           = 2026-07-29 12:47:33
+
+[ior-easy-read]
+t_start         = 2026-07-29 12:47:33
+exe             = ./ior --dataPacketType=timestamp -g -G 1871906314 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/ior-easy/ior_file_easy -C -Q 1 -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-1ranks-510144/ior-easy.stonewall -t 2m -b 9920000m -F -r -R -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-1ranks-510144/ior-easy-read.csv
+score           = 0.048405
+t_delta         = 0.0893
+t_end           = 2026-07-29 12:47:33
+
+[mdtest-easy-stat]
+t_start         = 2026-07-29 12:47:33
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883188 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-easy.stonewall -T --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-easy-stat.csv -a POSIX
+score           = 4.091454
+t_delta         = 29.9624
+t_end           = 2026-07-29 12:48:03
+
+[ior-hard-read]
+t_start         = 2026-07-29 12:48:03
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1871917002 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/ior-hard/file -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-1ranks-510144/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -r -R -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-1ranks-510144/ior-hard-read.csv
+score           = 1.705709
+t_delta         = 3.8044
+t_end           = 2026-07-29 12:48:07
+
+[mdtest-hard-stat]
+t_start         = 2026-07-29 12:48:07
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872500 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard.stonewall -T --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard-stat.csv -a POSIX
+score           = 3.155747
+t_delta         = 1.0125
+t_end           = 2026-07-29 12:48:08
+
+[mdtest-easy-delete]
+t_start         = 2026-07-29 12:48:08
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883188 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-easy.stonewall -r --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-easy-delete.csv -a POSIX
+score           = 3.229492
+t_delta         = 37.6601
+t_end           = 2026-07-29 12:48:45
+
+[mdtest-hard-read]
+t_start         = 2026-07-29 12:48:45
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872500 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard.stonewall -E -X --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard-read.csv -a POSIX
+score           = 0.101927
+t_delta         = 1.1076
+t_end           = 2026-07-29 12:48:46
+
+[mdtest-hard-delete]
+t_start         = 2026-07-29 12:48:46
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872500 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard.stonewall -r --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-1ranks-510144/mdtest-hard-delete.csv -a POSIX
+score           = 4.831034
+t_delta         = 1.0127
+t_end           = 2026-07-29 12:48:47
+
+[ior-rnd4K-easy-read]
+t_start         = 2026-07-29 12:48:47
+exe             = ./ior --dataPacketType=timestamp -g -G 1871906314 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-1ranks-510144/datafiles/ior-easy/ior_file_easy -F -r -D 30 -z -z -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-1ranks-510144/ior-rnd4K-easy-read.csv -t=4096 -b=4096 -s=10000000 -O stoneWallingWearOut=1 -C -Q 2
+score           = 1.755409
+t_delta         = 21.7458
+t_end           = 2026-07-29 12:49:09
+
+[SCORE]
+MD              = 0.928885
+BW              = 0.031404
+SCORE           = 0.170794 [INVALID]
+hash            = 7FC1757C
+; END 2026-07-29 12:49:09

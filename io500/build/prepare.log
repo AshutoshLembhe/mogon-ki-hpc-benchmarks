@@ -1,0 +1,347 @@
+This script downloads the code for the benchmarks
+It will also attempt to build the benchmarks
+It will output OK at the end if builds succeed
+
+Schema tools already exist. Skipping download.
+Getting IOR and mdtest
+~/io500/source/io500/build ~/io500/source/io500
+Cloning into 'ior'...
+Note: switching to '5fcf0ba995f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5fcf0ba Feature enable shifting (#537)
+~/io500/source/io500
+Preparing parallel find
+~/io500/source/io500/build ~/io500/source/io500
+HEAD is now at 2742734 Fixed warning for UID type checks.
+~/io500/source/io500
+~/io500/source/io500/build/ior ~/io500/source/io500
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I config
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /home/alembhe/io500/autoconf_software/autoconf-2.71-install/bin/autoconf --force
+autoreconf: running: /home/alembhe/io500/autoconf_software/autoconf-2.71-install/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:36: installing 'config/compile'
+configure.ac:15: installing 'config/config.guess'
+configure.ac:15: installing 'config/config.sub'
+configure.ac:18: installing 'config/install-sh'
+configure.ac:18: installing 'config/missing'
+contrib/Makefile.am: installing 'config/depcomp'
+parallel-tests: installing 'config/test-driver'
+autoreconf: 'config/config.sub' is updated
+autoreconf: 'config/config.guess' is updated
+autoreconf: 'config/install-sh' is updated
+autoreconf: Leaving directory '.'
+checking metadata... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for mpicc... mpicc
+checking for gcc... (cached) mpicc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to enable C11 features... none needed
+checking whether mpicc understands -c and -o together... yes
+checking dependency style of mpicc... gcc3
+checking for function MPI_Init... yes
+checking for mpi.h... yes
+checking for ranlib... ranlib
+checking for gcc... (cached) mpicc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether mpicc accepts -g... (cached) yes
+checking for mpicc option to enable C11 features... (cached) none needed
+checking whether mpicc understands -c and -o together... (cached) yes
+checking dependency style of mpicc... (cached) gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for fcntl.h... yes
+checking for libintl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/statfs.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/time.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/mount.h... yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for hdfs.h... no
+checking for beegfs/beegfs.h... no
+checking for size_t... yes
+checking for MPI_Count... yes
+checking for sysconf... yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for pow... no
+checking for putenv... yes
+checking for realpath... yes
+checking for regcomp... yes
+checking for sqrt... no
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strstr... yes
+checking for uname... yes
+checking for statfs... yes
+checking for statvfs... yes
+checking for MPI_File_read_c... no
+checking for library containing sqrt... -lm
+checking for gpfs.h... no
+checking for gpfs_fcntl.h... no
+checking for cuda_runtime.h... no
+checking for cufile.h... no
+checking for nvcc... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for Gfarm file system... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for CHFS... no
+checking for FINCHFS... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/test/Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/config.h
+config.status: executing depfiles commands
+Making clean in .
+make[1]: Entering directory '/fshpc/alembhe/io500/source/io500/build/ior/src'
+test -z "ior mdtest md-workbench " || rm -f ior mdtest md-workbench 
+test -z "libaiori.a" || rm -f libaiori.a
+rm -f *.o
+make[1]: Leaving directory '/fshpc/alembhe/io500/source/io500/build/ior/src'
+Making clean in test
+make[1]: Entering directory '/fshpc/alembhe/io500/source/io500/build/ior/src/test'
+test -z "testlib testexample" || rm -f testlib testexample
+rm -f *.o
+test -z "testlib.log testexample.log" || rm -f testlib.log testexample.log
+test -z "testlib.trs testexample.trs" || rm -f testlib.trs testexample.trs
+test -z "test-suite.log" || rm -f test-suite.log
+make[1]: Leaving directory '/fshpc/alembhe/io500/source/io500/build/ior/src/test'
+Making install in .
+make[1]: Entering directory '/fshpc/alembhe/io500/source/io500/build/ior/src'
+  CC       ior-ior-main.o
+  CC       ior-aiori.o
+  CC       ior-aiori-DUMMY.o
+  CC       ior-aiori-MPIIO.o
+  CC       ior-aiori-MMAP.o
+  CC       ior-aiori-POSIX.o
+  CC       libaiori_a-ior.o
+  CC       libaiori_a-mdtest.o
+  CC       libaiori_a-utilities.o
+  CC       libaiori_a-parse_options.o
+  CC       libaiori_a-ior-output.o
+  CC       libaiori_a-option.o
+  CC       libaiori_a-md-workbench.o
+  CC       libaiori_a-aiori.o
+  CC       libaiori_a-aiori-DUMMY.o
+  CC       libaiori_a-aiori-MPIIO.o
+  CC       libaiori_a-aiori-MMAP.o
+  CC       libaiori_a-aiori-POSIX.o
+  CC       mdtest-mdtest-main.o
+  CC       mdtest-aiori.o
+  CC       mdtest-aiori-DUMMY.o
+  CC       mdtest-aiori-MPIIO.o
+  CC       mdtest-aiori-MMAP.o
+  CC       mdtest-aiori-POSIX.o
+  CC       md_workbench-md-workbench-main.o
+  CC       md_workbench-aiori.o
+  CC       md_workbench-aiori-DUMMY.o
+  CC       md_workbench-aiori-MPIIO.o
+  CC       md_workbench-aiori-MMAP.o
+  CC       md_workbench-aiori-POSIX.o
+  AR       libaiori.a
+  CCLD     mdtest
+  CCLD     ior
+  CCLD     md-workbench
+make[2]: Entering directory '/fshpc/alembhe/io500/source/io500/build/ior/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/home/alembhe/io500/source/io500/bin'
+ /usr/bin/mkdir -p '/home/alembhe/io500/source/io500/lib'
+ /usr/bin/install -c -m 644  libaiori.a '/home/alembhe/io500/source/io500/lib'
+  /usr/bin/install -c ior mdtest md-workbench '/home/alembhe/io500/source/io500/bin'
+ ( cd '/home/alembhe/io500/source/io500/lib' && ranlib libaiori.a )
+make[2]: Leaving directory '/fshpc/alembhe/io500/source/io500/build/ior/src'
+make[1]: Leaving directory '/fshpc/alembhe/io500/source/io500/build/ior/src'
+Making install in test
+make[1]: Entering directory '/fshpc/alembhe/io500/source/io500/build/ior/src/test'
+make[2]: Entering directory '/fshpc/alembhe/io500/source/io500/build/ior/src/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/fshpc/alembhe/io500/source/io500/build/ior/src/test'
+make[1]: Leaving directory '/fshpc/alembhe/io500/source/io500/build/ior/src/test'
+IOR: OK
+
+~/io500/source/io500
+~/io500/source/io500/build/pfind ~/io500/source/io500
+Download LZ4 used for optimizing the network traffic
+Cloning into 'lz4'...
+Updating files:  71% (150/209)Updating files:  72% (151/209)Updating files:  73% (153/209)Updating files:  74% (155/209)Updating files:  75% (157/209)Updating files:  76% (159/209)Updating files:  77% (161/209)Updating files:  78% (164/209)Updating files:  79% (166/209)Updating files:  80% (168/209)Updating files:  81% (170/209)Updating files:  82% (172/209)Updating files:  83% (174/209)Updating files:  84% (176/209)Updating files:  85% (178/209)Updating files:  86% (180/209)Updating files:  87% (182/209)Updating files:  88% (184/209)Updating files:  89% (187/209)Updating files:  90% (189/209)Updating files:  91% (191/209)Updating files:  92% (193/209)Updating files:  93% (195/209)Updating files:  94% (197/209)Updating files:  95% (199/209)Updating files:  96% (201/209)Updating files:  97% (203/209)Updating files:  98% (205/209)Updating files:  99% (207/209)Updating files: 100% (209/209)Updating files: 100% (209/209), done.
+creating pkgconfig
+CC cachedObjs/1dcf30d53536c2c03de5dc021677a66b/lz4.o
+CC cachedObjs/1dcf30d53536c2c03de5dc021677a66b/lz4file.o
+CC cachedObjs/1dcf30d53536c2c03de5dc021677a66b/lz4frame.o
+CC cachedObjs/1dcf30d53536c2c03de5dc021677a66b/xxhash.o
+CC cachedObjs/83396cff3c169b3d9dd4a7e6c7792fc1/lz4.o
+CC cachedObjs/83396cff3c169b3d9dd4a7e6c7792fc1/lz4file.o
+CC cachedObjs/83396cff3c169b3d9dd4a7e6c7792fc1/lz4frame.o
+CC cachedObjs/83396cff3c169b3d9dd4a7e6c7792fc1/lz4hc.o
+CC cachedObjs/1dcf30d53536c2c03de5dc021677a66b/lz4hc.o
+CC cachedObjs/83396cff3c169b3d9dd4a7e6c7792fc1/xxhash.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4file.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4hc.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/xxhash.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4frame.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/bench.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lorem.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4cli.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4io.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/threadpool.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/timefn.o
+CC cachedObjs/d899e3357a27def6ef4a116bc839409e/util.o
+LD cachedObjs/1dcf30d53536c2c03de5dc021677a66b/liblz4.so.1.10.0
+AR cachedObjs/83396cff3c169b3d9dd4a7e6c7792fc1/liblz4.a
+liblz4.so.1.10.0 created
+LD cachedObjs/d899e3357a27def6ef4a116bc839409e/lz4
+==> built with multithreading support
+lz4 build completed
+rm: cannot remove '*.o': No such file or directory
+rm: cannot remove '*.a': No such file or directory
+Building parallel find;
+Using LZ4 for optimization
+[OK]
+Pfind: OK
+
+~/io500/source/io500
+CC build/verifier.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/verifier.o src/verifier.c
+CC build/util.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/util.o src/util.c
+CC build/ini-parse.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/ini-parse.o src/ini-parse.c
+CC build/phase_dbg.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_dbg.o src/phase_dbg.c
+CC build/phase_opt.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_opt.o src/phase_opt.c
+CC build/phase_timestamp.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_timestamp.o src/phase_timestamp.c
+CC build/phase_find.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_find.o src/phase_find.c
+CC build/phase_find_easy.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_find_easy.o src/phase_find_easy.c
+CC build/phase_find_hard.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_find_hard.o src/phase_find_hard.c
+CC build/phase_ior_easy.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_easy.o src/phase_ior_easy.c
+CC build/phase_ior_easy_read.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_easy_read.o src/phase_ior_easy_read.c
+CC build/phase_mdtest.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest.o src/phase_mdtest.c
+CC build/phase_ior.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior.o src/phase_ior.c
+CC build/phase_ior_easy_write.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_easy_write.o src/phase_ior_easy_write.c
+CC build/phase_ior_hard.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_hard.o src/phase_ior_hard.c
+CC build/phase_ior_hard_read.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_hard_read.o src/phase_ior_hard_read.c
+CC build/phase_ior_hard_write.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_hard_write.o src/phase_ior_hard_write.c
+CC build/phase_mdtest_easy.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_easy.o src/phase_mdtest_easy.c
+CC build/phase_mdtest_easy_delete.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_easy_delete.o src/phase_mdtest_easy_delete.c
+CC build/phase_mdtest_easy_stat.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_easy_stat.o src/phase_mdtest_easy_stat.c
+CC build/phase_mdtest_easy_write.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_easy_write.o src/phase_mdtest_easy_write.c
+CC build/phase_mdtest_hard.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_hard.o src/phase_mdtest_hard.c
+CC build/phase_mdtest_hard_delete.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_hard_delete.o src/phase_mdtest_hard_delete.c
+CC build/phase_mdtest_hard_read.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_hard_read.o src/phase_mdtest_hard_read.c
+CC build/phase_mdtest_hard_stat.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_hard_stat.o src/phase_mdtest_hard_stat.c
+CC build/phase_mdtest_hard_write.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdtest_hard_write.o src/phase_mdtest_hard_write.c
+CC build/phase_mdworkbench.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdworkbench.o src/phase_mdworkbench.c
+CC build/phase_mdworkbench_create.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdworkbench_create.o src/phase_mdworkbench_create.c
+CC build/phase_mdworkbench_delete.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdworkbench_delete.o src/phase_mdworkbench_delete.c
+CC build/phase_mdworkbench_bench.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_mdworkbench_bench.o src/phase_mdworkbench_bench.c
+CC build/phase_ior_rnd4k_easy_read.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/phase_ior_rnd4k_easy_read.o src/phase_ior_rnd4k_easy_read.c
+CC build/main.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/main.o src/main.c
+CC build/ini-test.o
+mpicc -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/ -DVERSION="\"io500-isc26_v2-26-g02091cf254d8\"" -c -o build/ini-test.o test/ini-test.c
+AR build/io500.a
+ar rcsT build/io500.a ./build/util.o ./build/ini-parse.o ./build/phase_dbg.o ./build/phase_opt.o ./build/phase_timestamp.o ./build/phase_find.o ./build/phase_find_easy.o ./build/phase_find_hard.o ./build/phase_ior_easy.o ./build/phase_ior_easy_read.o ./build/phase_mdtest.o ./build/phase_ior.o ./build/phase_ior_easy_write.o ./build/phase_ior_hard.o ./build/phase_ior_hard_read.o ./build/phase_ior_hard_write.o ./build/phase_mdtest_easy.o ./build/phase_mdtest_easy_delete.o ./build/phase_mdtest_easy_stat.o ./build/phase_mdtest_easy_write.o ./build/phase_mdtest_hard.o ./build/phase_mdtest_hard_delete.o ./build/phase_mdtest_hard_read.o ./build/phase_mdtest_hard_stat.o ./build/phase_mdtest_hard_write.o ./build/phase_mdworkbench.o ./build/phase_mdworkbench_create.o ./build/phase_mdworkbench_delete.o ./build/phase_mdworkbench_bench.o ./build/phase_ior_rnd4k_easy_read.o
+LD io500-verify
+mpicc -o io500-verify ./build/verifier.o ./build/io500.a -lm -g -O2 -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -lm 
+LD build/ini-test.exe
+mpicc -o build/ini-test.exe build/ini-test.o -lm -g -O2 -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -lm  ./build/io500.a
+LD io500
+mpicc -o io500 ./build/main.o -lm -g -O2 -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -lm  ./build/io500.a ./build/pfind/pfind.a ./build/ior/src/libaiori.a  -lm -g -O2 -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -Lcheck/lib64 -Lcheck/lib -Wl,--enable-new-dtags -Wl,-rpath=check/lib64:check/lib -lm 
+rm build/ini-test.o
+io500: OK
+
+
+OK: All required software packages are now prepared
+ior
+mdtest
+md-workbench
+pfind

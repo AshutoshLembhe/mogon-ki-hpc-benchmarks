@@ -1,0 +1,159 @@
+======================================
+NPB OpenMP Class C
+Job ID: 480242
+Node: cpu0625
+Slurm tasks: 1
+OpenMP threads: 1
+Working directory: /fshpc/alembhe/ashutoshbenchmarks/NAS_PARALLEL_BENCHMARK/NPB3.4.4/NPB3.4-OMP
+======================================
+
+Running ep.C.x
+OpenMP threads: 1
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                      1
+
+EP Benchmark Results:
+
+CPU Time =   157.076
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862918D+09    2.691519118718274D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                   157.08
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                    54.69
+ Mop/s/thread    =                    54.69
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.4
+ Compile date    =              23 Jul 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+Running cg.C.x
+OpenMP threads: 1
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     1
+
+ Initialization time =           9.320 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35328964381095E-12   109.9994423237398
+        5       0.88892040841639E-15    28.6471670038885
+       10       0.91283064597608E-15    28.9496695448994
+       15       0.90883472889458E-15    28.9716336228364
+       20       0.91449608821084E-15    28.9734210663746
+       25       0.91122960700368E-15    28.9735863059395
+       30       0.91683097468104E-15    28.9736033967622
+       35       0.91007816572997E-15    28.9736053266234
+       40       0.90641094839696E-15    28.9736055590682
+       45       0.90688184003024E-15    28.9736055884116
+       50       0.90798767881134E-15    28.9736055922496
+       55       0.90298607136070E-15    28.9736055927632
+       60       0.90921436072519E-15    28.9736055928340
+       65       0.90895434269513E-15    28.9736055928427
+       70       0.90322226372321E-15    28.9736055928445
+       75       0.90094234911286E-15    28.9736055928454
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1238451598331E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    79.80
+ Total threads   =                        1
+ Avail threads   =                        1
+ Mop/s total     =                  1796.45
+ Mop/s/thread    =                  1796.45
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.4
+ Compile date    =              23 Jul 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+Running ft.C.x
+OpenMP threads: 1
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - FT Benchmark
+
+ Size                :  512x 512x 512
+ Iterations                  :     20
+ Number of available threads :      1
+
+
+Running mg.C.x
+OpenMP threads: 1
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  512x 512x 512  (class C)
+ Iterations:                     20
+ Number of available threads:     1
+
+ Initialization time:         175.170 seconds
+
+  iter   1

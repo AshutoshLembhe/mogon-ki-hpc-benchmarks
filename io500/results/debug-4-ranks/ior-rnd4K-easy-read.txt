@@ -1,0 +1,43 @@
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Jul 29 12:31:26 2026
+Command line        : ./ior --dataPacketType=timestamp -g -G 1871905851 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-easy/ior_file_easy -F -r -D 1 -z -z -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-debug-510139/ior-rnd4K-easy-read.csv -t=4096 -b=4096 -s=10000000 -O stoneWallingWearOut=1 -C -Q 2
+Machine             : Linux cpu0608
+TestID              : 0
+StartTime           : Wed Jul 29 12:31:26 2026
+Path                : /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-easy/ior_file_easy.00000000
+FS                  : 19418.9 TiB   Used FS: 34.3%   Inodes: 7363.7 Mi   Used Inodes: 3.7%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-easy/ior_file_easy
+access              : file-per-process
+type                : independent
+segments            : 10000000
+ordering in a file  : random
+ordering inter file : constant task offset
+task offset         : 2
+nodes               : 1
+tasks               : 4
+clients per node    : 4
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 4096 bytes
+blocksize           : 4096 bytes
+aggregate filesize  : 152.59 GiB
+stonewallingTime    : 1
+stoneWallingWearOut : 1
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+stonewalling pairs accessed min: 53 max: 120 -- min data: 0.0 GiB mean data: 0.0 GiB time: 1.0s
+WARNING: Expected aggregate file size       = 163840000000
+WARNING: Stat() of aggregate file size      = 4169138176
+WARNING: Using actual aggregate bytes moved = 1966080
+WARNING: Maybe caused by deadlineForStonewalling
+read      1.04       266.58     0.009697    4.00       4.00       0.000238   1.80       0.000178   1.80       0   
+Pairs deadlineForStonewallingaccessed: 0

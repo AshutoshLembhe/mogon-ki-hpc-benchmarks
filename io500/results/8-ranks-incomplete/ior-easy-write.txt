@@ -1,0 +1,42 @@
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Jul 29 12:45:28 2026
+Command line        : ./ior --dataPacketType=timestamp -g -G 1871906435 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146/datafiles/ior-easy/ior_file_easy -C -Q 1 -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-8ranks-510146/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 30 -O stoneWallingWearOut=1 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-8ranks-510146/ior-easy-write.csv
+Machine             : Linux cpu0634
+TestID              : 0
+StartTime           : Wed Jul 29 12:45:28 2026
+Path                : /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146/datafiles/ior-easy/ior_file_easy.00000000
+FS                  : 19418.9 TiB   Used FS: 34.3%   Inodes: 7366.9 Mi   Used Inodes: 3.7%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146/datafiles/ior-easy/ior_file_easy
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 1
+tasks               : 8
+clients per node    : 8
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 2 MiB
+blocksize           : 9.46 TiB
+aggregate filesize  : 75.68 TiB
+stonewallingTime    : 30
+stoneWallingWearOut : 1
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+stonewalling pairs accessed min: 3441 max: 5091 -- min data: 6.7 GiB mean data: 8.6 GiB time: 34.1s
+WARNING: Expected aggregate file size       = 83214991360000
+WARNING: Stat() of aggregate file size      = 85412806656
+WARNING: Using actual aggregate bytes moved = 85412806656
+WARNING: Maybe caused by deadlineForStonewalling
+write     1985.61    992.86     0.007715    10158080000 2048.00    0.002041   41.02      0.000450   41.02      0   

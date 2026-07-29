@@ -1,0 +1,23 @@
+========================================
+IO500 debug run
+========================================
+Job ID:             510146
+Node:               cpu0634
+MPI ranks:          8
+Repository:         /home/alembhe/io500/source/io500
+Lustre data:        /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146
+Results directory:  /home/alembhe/io500/results/io500-8ranks-510146
+Configuration:      /home/alembhe/io500/config/io500-8ranks-510146.ini
+========================================
+
+IO500 version io500-isc26_v2-26-g02091cf254d8 (standard)
+ERROR INVALID (src/phase_dbg.c:15) stonewall-time 30s != 300s
+ERROR INVALID (src/main.c:490) Runtime is smaller than expected minimum runtime
+[RESULT]       ior-easy-write        1.939068 GiB/s : time 41.037 seconds [INVALID]
+ERROR INVALID (src/main.c:490) Runtime is smaller than expected minimum runtime
+[RESULT]    mdtest-easy-write       22.680242 kIOPS : time 31.566 seconds [INVALID]
+[      ]            timestamp        0.000000 kIOPS : time 0.003 seconds
+
+IO500 return code: 137
+Results stored in: /home/alembhe/io500/results/io500-8ranks-510146
+Test data stored in: /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146

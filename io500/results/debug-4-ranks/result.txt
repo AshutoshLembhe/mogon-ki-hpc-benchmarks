@@ -1,0 +1,153 @@
+[run]
+procs           = 4
+version         = io500-isc26_v2-26-g02091cf254d8
+config-hash     = 71E639B1
+result-dir      = /home/alembhe/io500/results/io500-debug-510139
+mode            = standard
+; ERROR INVALID PAUSING BETWEEN RUNS ACTIVATED
+; START 2026-07-29 12:30:14
+; ERROR INVALID stonewall-time 1s != 300s
+
+
+[ior-easy-write]
+t_pause         = 2026-07-29 12:30:14
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/ior-easy-write
+t_start         = 2026-07-29 12:30:14
+exe             = ./ior --dataPacketType=timestamp -g -G 1871905851 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-easy/ior_file_easy -C -Q 1 -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-debug-510139/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 1 -O stoneWallingWearOut=1 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-debug-510139/ior-easy-write.csv
+throughput-stonewall = 3.23
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 1.121975
+t_delta         = 3.4720
+t_end           = 2026-07-29 12:30:17
+
+[mdtest-easy-write]
+t_pause         = 2026-07-29 12:30:17
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-easy-write
+t_start         = 2026-07-29 12:30:17
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883651 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-debug-510139/mdtest-easy.stonewall -C -Y -W 1 --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-easy-write.csv -a POSIX
+rate-stonewall  = 11.377945
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 9.045384
+t_delta         = 2.5723
+t_end           = 2026-07-29 12:30:20
+
+[timestamp]
+t_pause         = 2026-07-29 12:30:20
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/timestamp
+t_start         = 2026-07-29 12:30:20
+t_delta         = 0.0012
+t_end           = 2026-07-29 12:30:20
+
+[ior-hard-write]
+t_pause         = 2026-07-29 12:30:20
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/ior-hard-write
+t_start         = 2026-07-29 12:30:20
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1871916539 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-hard/file -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-debug-510139/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -w -D 1 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-debug-510139/ior-hard-write.csv -O stoneWallingWearOut=1
+throughput-stonewall = 0.76
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 0.237439
+t_delta         = 7.4760
+t_end           = 2026-07-29 12:30:28
+
+[mdtest-hard-write]
+t_pause         = 2026-07-29 12:30:28
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-hard-write
+t_start         = 2026-07-29 12:30:28
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872963 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-debug-510139/mdtest-hard.stonewall -C -Y -W 1 --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-hard-write.csv -a POSIX
+rate-stonewall  = 0.004509
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 0.008727
+t_delta         = 40.8816
+t_end           = 2026-07-29 12:31:08
+
+[find]
+t_pause         = 2026-07-29 12:31:08
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/find
+t_start         = 2026-07-29 12:31:08
+exe             = ./pfind /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles -newer /home/alembhe/io500/results/io500-debug-510139/timestampfile -size 3901c -name *01* -C -q 10000
+nproc           = 4
+; ERROR INVALID Find didn't find anything, this is likely invalid.
+found           = 0
+total-files     = 14509
+score           = 532.786023
+t_delta         = 0.0305
+t_end           = 2026-07-29 12:31:08
+
+[ior-easy-read]
+t_pause         = 2026-07-29 12:31:08
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/ior-easy-read
+t_start         = 2026-07-29 12:31:08
+exe             = ./ior --dataPacketType=timestamp -g -G 1871905851 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-easy/ior_file_easy -C -Q 1 -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-debug-510139/ior-easy.stonewall -t 2m -b 9920000m -F -r -R -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-debug-510139/ior-easy-read.csv
+score           = 3.944872
+t_delta         = 0.9939
+t_end           = 2026-07-29 12:31:09
+
+[mdtest-easy-stat]
+t_pause         = 2026-07-29 12:31:09
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-easy-stat
+t_start         = 2026-07-29 12:31:09
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883651 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-debug-510139/mdtest-easy.stonewall -T --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-easy-stat.csv -a POSIX
+score           = 17.632934
+t_delta         = 1.8127
+t_end           = 2026-07-29 12:31:11
+
+[ior-hard-read]
+t_pause         = 2026-07-29 12:31:11
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/ior-hard-read
+t_start         = 2026-07-29 12:31:11
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1871916539 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-hard/file -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-debug-510139/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -r -R -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-debug-510139/ior-hard-read.csv
+score           = 0.198937
+t_delta         = 8.9218
+t_end           = 2026-07-29 12:31:20
+
+[mdtest-hard-stat]
+t_pause         = 2026-07-29 12:31:20
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-hard-stat
+t_start         = 2026-07-29 12:31:20
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872963 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-debug-510139/mdtest-hard.stonewall -T --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-hard-stat.csv -a POSIX
+score           = 18.184758
+t_delta         = 1.0279
+t_end           = 2026-07-29 12:31:21
+
+[mdtest-easy-delete]
+t_pause         = 2026-07-29 12:31:21
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-easy-delete
+t_start         = 2026-07-29 12:31:21
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883651 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-debug-510139/mdtest-easy.stonewall -r --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-easy-delete.csv -a POSIX
+score           = 12.844885
+t_delta         = 2.1133
+t_end           = 2026-07-29 12:31:23
+
+[mdtest-hard-read]
+t_pause         = 2026-07-29 12:31:23
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-hard-read
+t_start         = 2026-07-29 12:31:23
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872963 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-debug-510139/mdtest-hard.stonewall -E -X --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-hard-read.csv -a POSIX
+score           = 0.802801
+t_delta         = 1.4421
+t_end           = 2026-07-29 12:31:25
+
+[mdtest-hard-delete]
+t_pause         = 2026-07-29 12:31:25
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/mdtest-hard-delete
+t_start         = 2026-07-29 12:31:25
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=-1536872963 -N 1 -F -d /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/mdtest-hard -x /home/alembhe/io500/results/io500-debug-510139/mdtest-hard.stonewall -r --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-debug-510139/mdtest-hard-delete.csv -a POSIX
+score           = 3.808109
+t_delta         = 1.0989
+t_end           = 2026-07-29 12:31:26
+
+[ior-rnd4K-easy-read]
+t_pause         = 2026-07-29 12:31:26
+; Checking for pause file /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/pause/ior-rnd4K-easy-read
+t_start         = 2026-07-29 12:31:26
+exe             = ./ior --dataPacketType=timestamp -g -G 1871905851 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-debug-510139/datafiles/ior-easy/ior_file_easy -F -r -D 1 -z -z -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-debug-510139/ior-rnd4K-easy-read.csv -t=4096 -b=4096 -s=10000000 -O stoneWallingWearOut=1 -C -Q 2
+score           = 0.001017
+t_delta         = 1.8090
+t_end           = 2026-07-29 12:31:28
+
+[SCORE]
+MD              = 5.193889
+BW              = 0.676193
+SCORE           = 1.874052 [INVALID]
+hash            = 217261B0
+; END 2026-07-29 12:31:28

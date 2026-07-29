@@ -1,0 +1,40 @@
+========================================
+IO500 debug run
+========================================
+Job ID:             510145
+Node:               cpu0608
+MPI ranks:          4
+Repository:         /home/alembhe/io500/source/io500
+Lustre data:        /lustre/project/ki-mawahpc/ashutoshio500/io500-4ranks-510145
+Results directory:  /home/alembhe/io500/results/io500-4ranks-510145
+Configuration:      /home/alembhe/io500/config/io500-4ranks-510145.ini
+========================================
+
+IO500 version io500-isc26_v2-26-g02091cf254d8 (standard)
+ERROR INVALID (src/phase_dbg.c:15) stonewall-time 30s != 300s
+ERROR INVALID (src/main.c:490) Runtime is smaller than expected minimum runtime
+[RESULT]       ior-easy-write        0.567721 GiB/s : time 88.828 seconds [INVALID]
+ERROR INVALID (src/main.c:490) Runtime is smaller than expected minimum runtime
+[RESULT]    mdtest-easy-write       11.536435 kIOPS : time 36.431 seconds [INVALID]
+[      ]            timestamp        0.000000 kIOPS : time 0.003 seconds
+ERROR INVALID (src/main.c:490) Runtime is smaller than expected minimum runtime
+[RESULT]       ior-hard-write        0.000034 GiB/s : time 40.942 seconds [INVALID]
+ERROR INVALID (src/main.c:490) Runtime is smaller than expected minimum runtime
+[RESULT]    mdtest-hard-write        0.007693 kIOPS : time 52.488 seconds [INVALID]
+ERROR INVALID (src/phase_find.c:80) Find didn't find anything, this is likely invalid.
+[RESULT]                 find      327.679600 kIOPS : time 1.254 seconds [INVALID]
+[RESULT]        ior-easy-read        1.987999 GiB/s : time 25.375 seconds
+[RESULT]     mdtest-easy-stat       15.976586 kIOPS : time 26.591 seconds
+[RESULT]        ior-hard-read        0.204368 GiB/s : time 0.014 seconds
+[RESULT]     mdtest-hard-stat       15.778696 kIOPS : time 1.035 seconds
+[RESULT]   mdtest-easy-delete       13.979265 kIOPS : time 30.244 seconds
+[RESULT]     mdtest-hard-read        0.438048 kIOPS : time 1.913 seconds
+[RESULT]   mdtest-hard-delete        5.078999 kIOPS : time 1.088 seconds
+[      ]  ior-rnd4K-easy-read        0.000605 GiB/s : time 44.480 seconds
+[SCORE ] Bandwidth 0.053014 GiB/s : IOPS 4.674587 kiops : TOTAL 0.497813 [INVALID]
+
+The result files are stored in the directory: /home/alembhe/io500/results/io500-4ranks-510145
+
+IO500 return code: 0
+Results stored in: /home/alembhe/io500/results/io500-4ranks-510145
+Test data stored in: /lustre/project/ki-mawahpc/ashutoshio500/io500-4ranks-510145

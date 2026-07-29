@@ -1,0 +1,36 @@
+[run]
+procs           = 8
+version         = io500-isc26_v2-26-g02091cf254d8
+config-hash     = 3BA27C3B
+result-dir      = /home/alembhe/io500/results/io500-8ranks-510146
+mode            = standard
+; START 2026-07-29 12:45:28
+; ERROR INVALID stonewall-time 30s != 300s
+
+
+[ior-easy-write]
+t_start         = 2026-07-29 12:45:28
+exe             = ./ior --dataPacketType=timestamp -g -G 1871906435 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146/datafiles/ior-easy/ior_file_easy -C -Q 1 -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-8ranks-510146/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 30 -O stoneWallingWearOut=1 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-8ranks-510146/ior-easy-write.csv
+throughput-stonewall = 2.01
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 1.939068
+t_delta         = 41.0373
+t_end           = 2026-07-29 12:46:09
+
+[mdtest-easy-write]
+t_start         = 2026-07-29 12:46:09
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G -1536883067 -N 1 -d /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146/datafiles/mdtest-easy -x /home/alembhe/io500/results/io500-8ranks-510146/mdtest-easy.stonewall -C -Y -W 30 --saveRankPerformanceDetails=/home/alembhe/io500/results/io500-8ranks-510146/mdtest-easy-write.csv -a POSIX
+rate-stonewall  = 22.880519
+; ERROR INVALID Runtime is smaller than expected minimum runtime
+score           = 22.680242
+t_delta         = 31.5655
+t_end           = 2026-07-29 12:46:41
+
+[timestamp]
+t_start         = 2026-07-29 12:46:41
+t_delta         = 0.0027
+t_end           = 2026-07-29 12:46:41
+
+[ior-hard-write]
+t_start         = 2026-07-29 12:46:41
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1871917123 -k -e -o /lustre/project/ki-mawahpc/ashutoshio500/io500-8ranks-510146/datafiles/ior-hard/file -O stoneWallingStatusFile=/home/alembhe/io500/results/io500-8ranks-510146/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -w -D 30 -a POSIX -O saveRankPerformanceDetailsCSV=/home/alembhe/io500/results/io500-8ranks-510146/ior-hard-write.csv -O stoneWallingWearOut=1

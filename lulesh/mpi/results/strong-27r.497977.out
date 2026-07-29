@@ -1,0 +1,712 @@
+==================================
+LULESH strong scaling
+Job ID: 497977
+Node(s): cpu0610
+MPI ranks: 27
+Local mesh size: 40 x 40 x 40
+Working directory: /fshpc/alembhe/ashutoshbenchmarks/LULESH/source
+==================================
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        4.2 (s)
+Grind time (us/z/c)  = 0.66355878 (per dom)  ( 4.2467762 overall)
+FOM                  =  1507.0255 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        5.8 (s)
+Grind time (us/z/c)  = 0.89939902 (per dom)  ( 5.7561537 overall)
+FOM                  =  1111.8536 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        5.9 (s)
+Grind time (us/z/c)  = 0.92049834 (per dom)  ( 5.8911894 overall)
+FOM                  =  1086.3681 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        5.9 (s)
+Grind time (us/z/c)  = 0.91797214 (per dom)  ( 5.8750217 overall)
+FOM                  =  1089.3577 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        5.9 (s)
+Grind time (us/z/c)  = 0.91993032 (per dom)  (  5.887554 overall)
+FOM                  =  1087.0389 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        5.9 (s)
+Grind time (us/z/c)  = 0.92416736 (per dom)  ( 5.9146711 overall)
+FOM                  =  1082.0551 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =          6 (s)
+Grind time (us/z/c)  = 0.93176082 (per dom)  ( 5.9632693 overall)
+FOM                  =  1073.2368 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        5.9 (s)
+Grind time (us/z/c)  =  0.9286221 (per dom)  ( 5.9431814 overall)
+FOM                  =  1076.8643 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =          6 (s)
+Grind time (us/z/c)  = 0.93730102 (per dom)  ( 5.9987265 overall)
+FOM                  =  1066.8931 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =          6 (s)
+Grind time (us/z/c)  = 0.94054525 (per dom)  ( 6.0194896 overall)
+FOM                  =  1063.2131 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =          6 (s)
+Grind time (us/z/c)  = 0.93681055 (per dom)  ( 5.9955875 overall)
+FOM                  =  1067.4517 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.1 (s)
+Grind time (us/z/c)  = 0.94600984 (per dom)  (  6.054463 overall)
+FOM                  =  1057.0715 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.5 (s)
+Grind time (us/z/c)  =  1.0213055 (per dom)  ( 6.5363553 overall)
+FOM                  =  979.13894 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.6 (s)
+Grind time (us/z/c)  =  1.0309489 (per dom)  ( 6.5980729 overall)
+FOM                  =  969.98019 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.6 (s)
+Grind time (us/z/c)  =   1.038109 (per dom)  ( 6.6438974 overall)
+FOM                  =  963.29001 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.7 (s)
+Grind time (us/z/c)  =  1.0394181 (per dom)  ( 6.6522761 overall)
+FOM                  =  962.07672 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.7 (s)
+Grind time (us/z/c)  =  1.0412568 (per dom)  ( 6.6640435 overall)
+FOM                  =  960.37789 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.7 (s)
+Grind time (us/z/c)  =  1.0405749 (per dom)  ( 6.6596793 overall)
+FOM                  =  961.00724 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.7 (s)
+Grind time (us/z/c)  =  1.0427833 (per dom)  ( 6.6738133 overall)
+FOM                  =  958.97198 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =  1.0792015 (per dom)  ( 6.9068896 overall)
+FOM                  =  926.61102 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =  1.0810848 (per dom)  ( 6.9189426 overall)
+FOM                  =  924.99683 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =   1.080894 (per dom)  ( 6.9177216 overall)
+FOM                  =   925.1601 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =  1.0814279 (per dom)  ( 6.9211383 overall)
+FOM                  =  924.70338 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =  1.0829612 (per dom)  ( 6.9309515 overall)
+FOM                  =  923.39414 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =  1.0833945 (per dom)  ( 6.9337247 overall)
+FOM                  =  923.02482 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =        6.9 (s)
+Grind time (us/z/c)  =    1.08588 (per dom)  ( 6.9496321 overall)
+FOM                  =  920.91205 (z/s)
+
+Running problem size 40^3 per domain until completion
+Num processors: 1
+Total number of elements: 64000 
+
+To run other sizes, use -s <integer>.
+To run a fixed number of iterations, use -i <integer>.
+To run a more or less balanced region set, use -b <integer>.
+To change the relative costs of regions, use -c <integer>.
+To print out progress, use -p
+To write an output file for VisIt, use -v
+See help (-h) for more options
+
+Run completed:
+   Problem size        =  40
+   MPI tasks           =  1
+   Iteration count     =  100
+   Final Origin Energy =  3.135222e+06
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 2.619345e-10
+        TotalAbsDiff = 1.075765e-09
+        MaxRelDiff   = 6.743018e-13
+
+Elapsed time         =          7 (s)
+Grind time (us/z/c)  =  1.0875252 (per dom)  ( 6.9601614 overall)
+FOM                  =   919.5189 (z/s)
+
+
+Strong-scaling job finished.
