@@ -1,6 +1,6 @@
 # MOGON KI HPC Benchmark Runs
 
-This repository contains Slurm scripts, configuration files, and raw output from CPU benchmark experiments performed on the MOGON KI high-performance computing system in July 2026.
+This repository contains Slurm scripts, configuration files, and raw output from CPU benchmark experiments performed on the MOGON KI high-performance computing system.
 
 The work covers three benchmark suites:
 
@@ -8,7 +8,7 @@ The work covers three benchmark suites:
 - Livermore Unstructured Lagrangian Explicit Shock Hydrodynamics (LULESH) using MPI and OpenMP
 - IO500 using MPI and the Lustre parallel file system
 
-The repository is an experimental record. Raw outputs are retained even when a run was incomplete or invalid so that the results can be inspected and the experiments can be corrected and repeated.
+The repository is an experimental record. Raw outputs are retained even when a run was incomplete or invalid.
 
 ## Repository contents
 
