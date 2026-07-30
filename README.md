@@ -33,14 +33,13 @@ The repository is an experimental record. Raw outputs are retained even when a r
 │       ├── scripts/
 │       └── results/
 ├── io500/
-│   ├── build/
-│   ├── config/
-│   ├── environment/
-│   ├── scripts/
-│   ├── results/
-│   └── summaries/
-├── VALIDATION.md
-└── SHA256SUMS
+    ├── build/
+    ├── config/
+    ├── environment/
+    ├── scripts/
+    ├── results/
+    └── summaries/
+
 ```
 
 ## Software environment
