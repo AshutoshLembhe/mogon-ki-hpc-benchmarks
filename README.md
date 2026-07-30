@@ -90,8 +90,6 @@ The graphs below use Class B because it has complete, successfully verified meas
 
 ![NPB Class B OpenMP speedup](assets/graphs/npb-class-b-openmp-speedup.png)
 
-See [`VALIDATION.md`](VALIDATION.md) for the complete status assessment.
-
 ### LULESH OpenMP
 
 All ten recorded OpenMP runs completed 100 iterations. The strong-scaling results used a fixed `120^3` mesh.
